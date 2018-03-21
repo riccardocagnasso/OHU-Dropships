@@ -168,9 +168,7 @@ namespace OHUShips
         public static void EnterMapWithShip(LandedShip caravan, Map map)
         {
             TravelingShipsUtility.ReimbarkPawnsFromLandedShip(caravan);
-            IntVec3 enterCell = TravelingShipsUtility.CenterCell(map);
-            Func<ShipBase, IntVec3> spawnCellGetter = (ShipBase p) => CellFinder.RandomSpawnCellForPawnNear(enterCell, map);
-            TravelingShipsUtility.Enter(caravan, map, spawnCellGetter);
+            TravelingShipsUtility.Enter(caravan, map);
         }
 
         public static IntVec3 CenterCell(Map map)
@@ -186,10 +184,12 @@ namespace OHUShips
             return CellFinder.RandomCell(map);
         }
 
-        public static void Enter(LandedShip caravan, Map map, Func<ShipBase, IntVec3> spawnCellGetter)
+        public static void Enter(LandedShip caravan, Map map)
         {
             List<ShipBase> ships = caravan.ships;
-            DropShipUtility.DropShipGroups(TravelingShipsUtility.CenterCell(map), map, ships, TravelingShipArrivalAction.EnterMapFriendly);            
+            IntVec3 randomEdgeCell = CellFinder.RandomEdgeCell(map);
+            IntVec3 randomSpawnEdgeCell = CellFinder.RandomSpawnCellForPawnNear(randomEdgeCell, map);
+            DropShipUtility.DropShipGroups(randomSpawnEdgeCell, map, ships, TravelingShipArrivalAction.EnterMapFriendly);
             //caravan.RemoveAllPawns();
             if (caravan.Spawned)
             {
