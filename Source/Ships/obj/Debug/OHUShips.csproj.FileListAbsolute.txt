@@ -44,3 +44,9 @@ C:\Users\phas\Desktop\RimWorld.v0.18.1722\Mods\OHU-Dropships\Source\Ships\obj\De
 C:\Users\phas\Desktop\RimWorld.v0.18.1722\Mods\OHU-Dropships\Source\Ships\obj\Debug\0OHUShips.pdb
 C:\Users\phas\Desktop\RimWorld.v0.18.1722\Mods\OHU-Dropships\Assemblies\0OHUShips.dll
 C:\Users\phas\Desktop\RimWorld.v0.18.1722\Mods\OHU-Dropships\Assemblies\0OHUShips.pdb
+C:\Users\phas\Desktop\RimWorld.v0.18.1722\Mods\OHU-Dropships-1.56\Assemblies\0OHUShips.dll
+C:\Users\phas\Desktop\RimWorld.v0.18.1722\Mods\OHU-Dropships-1.56\Assemblies\0OHUShips.pdb
+C:\Users\phas\Desktop\RimWorld.v0.18.1722\Mods\OHU-Dropships-1.56\Source\Ships\obj\Debug\OHUShips.csprojResolveAssemblyReference.cache
+C:\Users\phas\Desktop\RimWorld.v0.18.1722\Mods\OHU-Dropships-1.56\Source\Ships\obj\Debug\OHUShips.csproj.CoreCompileInputs.cache
+C:\Users\phas\Desktop\RimWorld.v0.18.1722\Mods\OHU-Dropships-1.56\Source\Ships\obj\Debug\0OHUShips.dll
+C:\Users\phas\Desktop\RimWorld.v0.18.1722\Mods\OHU-Dropships-1.56\Source\Ships\obj\Debug\0OHUShips.pdb

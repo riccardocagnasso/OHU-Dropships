@@ -1,5 +1,4 @@
 ﻿using RimWorld.Planet;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +6,6 @@ using Verse;
 using UnityEngine;
 using RimWorld;
 using Verse.Sound;
-using System.Reflection;
 
 namespace OHUShips
 {
@@ -87,30 +85,6 @@ namespace OHUShips
                 return DropShipUtility.movingShip;
             }
         }
-
-        //public List<Thing> AllLandedShipCargo
-        //{
-        //    get
-        //    {
-        //        List<Thing> list = new List<Thing>();
-        //        Log.Message("A");
-        //        list.AddRange(this.allLandedShipCargo);
-        //        Log.Message("B");
-        //        List<Thing> inventory = (CaravanInventoryUtility.AllInventoryItems(this));
-        //        for (int i = 0; i < inventory.Count; i++)
-        //        {
-        //            if (!list.Contains(inventory[i]))
-        //            {
-        //                list.Add(inventory[i]);
-        //            }
-        //        }
-        //        Log.Message("D");
-        //        list.AddRange(this.PawnsListForReading.FindAll(x => !x.IsColonist).Cast<Thing>());
-
-        //        Log.Message("E");
-        //        return list;
-        //    }
-        //}
 
         public IEnumerable<Thing> AllLandedShipCargo
         {

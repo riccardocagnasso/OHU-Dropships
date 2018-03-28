@@ -188,9 +188,9 @@ namespace OHUShips
         {
             List<ShipBase> ships = caravan.ships;
             IntVec3 randomEdgeCell = CellFinder.RandomEdgeCell(map);
-            IntVec3 randomSpawnEdgeCell = CellFinder.RandomSpawnCellForPawnNear(randomEdgeCell, map);
+            IntVec3 randomSpawnEdgeCell = new IntVec3();
+            DropShipUtility.TryFindShipDropLocationNear(randomEdgeCell, 100, map,out randomSpawnEdgeCell, new IntVec2(4,4));
             DropShipUtility.DropShipGroups(randomSpawnEdgeCell, map, ships, TravelingShipArrivalAction.EnterMapFriendly);
-            //caravan.RemoveAllPawns();
             if (caravan.Spawned)
             {
                 Find.WorldObjects.Remove(caravan);
